@@ -14,5 +14,5 @@ jobs:
         run: echo The username is ${{ inputs.username }}
         shell: bash
       - name: Execute script
-        run: ${{ github.action_path }}/.github/scripts/test.sh
+        run: ./.github/scripts/test.sh
         shell: bash
