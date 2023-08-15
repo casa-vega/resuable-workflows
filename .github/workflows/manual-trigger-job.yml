@@ -18,5 +18,5 @@ jobs:
       - name: path
         run: pwd
       - name: Execute script
-        run: ./.github/scripts/test.sh
+        run: bash .github/scripts/test.sh
         shell: bash
