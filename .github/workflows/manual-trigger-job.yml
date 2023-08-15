@@ -19,6 +19,8 @@ jobs:
         run: ls -al
       - name: where am I
         run: ls -al reuse/
+      - name: where am I
+        run: ls -al reuse/.github
       - name: path
         run: pwd
       - name: Execute script
