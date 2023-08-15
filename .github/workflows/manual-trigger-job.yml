@@ -25,5 +25,5 @@ jobs:
       - name: path
         run: pwd
       - name: Execute script
-        run: bash ${{ github.action_path }}/test.sh
+        run: bash reuse/test.sh
         shell: bash
