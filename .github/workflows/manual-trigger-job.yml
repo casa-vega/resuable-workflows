@@ -11,6 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
+          repository: casa-vega/resuable-workflows
           path: reuse
       - name: Print the input name to STDOUT
         run: echo The username is ${{ inputs.username }}
