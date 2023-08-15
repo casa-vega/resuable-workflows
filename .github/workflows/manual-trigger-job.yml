@@ -24,5 +24,5 @@ jobs:
       - name: path
         run: pwd
       - name: Execute script
-        run: bash reuse/.github/scripts/test.sh
+        run: bash reuse/test.sh
         shell: bash
