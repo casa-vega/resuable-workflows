@@ -9,9 +9,10 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Print the input name to STDOUT
         run: echo The username is ${{ inputs.username }}
         shell: bash
       - name: Execute script
-        run: casa-vega/resuable-workflows/.github/scripts/test.sh@main
+        run: ${{ github.action_path }}/.github/scripts/test.sh@main
         shell: bash
