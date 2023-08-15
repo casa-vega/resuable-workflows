@@ -17,6 +17,8 @@ jobs:
         shell: bash
       - name: where am I
         run: ls -al
+      - name: where am I
+        run: ls -al reuse/
       - name: path
         run: pwd
       - name: Execute script
