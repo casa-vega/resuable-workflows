@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          path: reuse
       - name: Print the input name to STDOUT
         run: echo The username is ${{ inputs.username }}
         shell: bash
@@ -20,5 +22,5 @@ jobs:
       - name: path
         run: pwd
       - name: Execute script
-        run: bash .github/scripts/test.sh
+        run: bash reuse/.github/scripts/test.sh
         shell: bash
